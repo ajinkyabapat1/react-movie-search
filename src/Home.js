@@ -1,12 +1,16 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { GlobalContext } from "./context";
-import SingleMovie from './SingleMovie';
+import Movie from "./Movie";
+import Search from "./Search";
+
 const Home = () => {
-    const name=GlobalContext();
   return (
     <>
-     <h1>{name}</h1>
+      <div className="container">
+        {/* plz subsribe to thapa technical channel 
+          https://www.youtube.com/thapatechnical
+         */}
+        <Search />
+        <Movie />
+      </div>
     </>
   );
 };
