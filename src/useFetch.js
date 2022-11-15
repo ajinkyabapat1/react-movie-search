@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 
 // setting the api link
 export const API_URL = `https://www.omdbapi.com/?apikey=7b379e1d`;
-/* plz subsribe to thapa technical channel 
-          https://www.youtube.com/thapatechnical
-         */
+
 
 const useFetch = (apiParams) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,7 +37,7 @@ const useFetch = (apiParams) => {
     return () => {
       clearTimeout(timeOut);
       console.log("clear");
-    };
+    };   
   }, [apiParams]);
 
   return { isLoading, isError, movie };
